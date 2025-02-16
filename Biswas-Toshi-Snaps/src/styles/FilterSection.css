@@ -1,0 +1,29 @@
+.body {
+  margin-bottom: 16px;
+}
+.body .filter-button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.body .filter-button.active {
+  background-color: blue;
+}
+
+.filter-section-wrapper {
+  transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+}
+.filter-section-wrapper.hidden {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+}
+.filter-section-wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=FilterSection.css.map */

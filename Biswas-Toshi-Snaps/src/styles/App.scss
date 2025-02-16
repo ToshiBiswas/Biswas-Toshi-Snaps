@@ -1,0 +1,10 @@
+.filterable-app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .body {
+    padding: 16px;
+    flex: 1;
+  }
+}
