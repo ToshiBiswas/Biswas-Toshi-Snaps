@@ -3,6 +3,8 @@ import './styles/App.css';
 import Header from './components/Header.jsx';
 import Content from './components/content.jsx';
 import Filters from './components/Filters.jsx';
+import data from '[filepath]/json/docs.json'
+
 const App = () => {
   // State for the currently active filter (null means no active filter)
   const [activeFilter, setActiveFilter] = useState(null);

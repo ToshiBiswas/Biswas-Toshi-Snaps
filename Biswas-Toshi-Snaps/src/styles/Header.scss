@@ -1,4 +1,29 @@
-
+@use './partials/_global.scss' as *;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .header{
+    background-color: #f0f0f0;
+    padding: 16px;
+    display: flex;
+    justify-content: flex-end;
+    .header_section{
+      .header_section_button{
+        padding: 8px 12px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    
+        &:hover {
+          background-color: #0056b3;
+        }
+        
+      }
+    }
+  }
+  
+}
 .header{
   background-color: #f0f0f0;
   padding: 16px;
