@@ -25,7 +25,6 @@ const Filters = ({ activeFilter, onFilterChange }) => {
         <h1 className filter_title>
             Filters: 
         </h1>
-                
         <div className="filter">
         {filters.map((filter) => (
             <button

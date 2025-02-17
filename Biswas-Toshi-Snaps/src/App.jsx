@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import '../styles/App.css';
-import Header from './Header.jsx';
-import Content from './content.jsx';
-import Filters from './Filters.jsx';
+import './styles/App.css';
+import Header from './components/Header.jsx';
+import Content from './components/content.jsx';
+import Filters from './components/Filters.jsx';
 const App = () => {
   // State for the currently active filter (null means no active filter)
   const [activeFilter, setActiveFilter] = useState(null);
@@ -10,7 +10,7 @@ const App = () => {
   const [isFilterVisible, setIsFilterVisible] = useState(true);
 
   // Example list of items; each item has multiple categories corresponding to filters.
-  const items = [
+  const items = items.[
     { id: 1, name: 'Item 1', categories: ['filter1', 'filter2'] },
     { id: 2, name: 'Item 2', categories: ['filter2'] },
     { id: 3, name: 'Item 3', categories: ['filter1', 'filter3'] },
@@ -50,7 +50,6 @@ const App = () => {
     </div>
   );
 };
-
 
 
 export default App
