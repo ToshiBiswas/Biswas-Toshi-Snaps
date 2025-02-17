@@ -1,7 +1,6 @@
 .body {
-
     margin-bottom: 16px;
-  
+    
     .filter-button {
       background-color: gray;
       color: white;
@@ -16,7 +15,6 @@
       }
     }
   }
-  
   .filter-section-wrapper {
     transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
     &.hidden {
