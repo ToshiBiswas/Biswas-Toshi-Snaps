@@ -1,0 +1,148 @@
+@use './partials/_global.scss' as *;
+@media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
+    .body {
+        margin-bottom: 16px;
+        .filter_title{
+            @include HeadingDesktop;
+            color: $Black;
+        }
+        .filter{
+            display:flex;
+            flex-wrap:wrap; 
+            gap:8px;
+
+            .filter-button {
+                padding: 6px 8px;
+                border: 1px solid $forest-green;
+                background-color: $white;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                color: $forest-green;
+                @include LabelTablet;
+                &:hover {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+                &.active {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .filter-section-wrapper {
+
+        transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+        &.hidden {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+      
+}
+@media screen and (min-width: 768px) and (max-width: 1279.99999999999999px) {
+    .body {
+        margin-bottom: 16px;
+        .filter_title{
+            @include HeadingDesktop;
+            color: $Black;
+        }
+        .filter{
+            display:flex;
+            flex-wrap:wrap; 
+            gap:8px;
+
+            .filter-button {
+                padding: 6px 8px;
+                border: 1px solid $forest-green;
+                background-color: $white;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                color: $forest-green;
+                @include LabelDesktop;
+                &:hover {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+                &.active {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .filter-section-wrapper {
+        padding-top:16px;
+        padding-bottom:48px;
+        transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+        &.hidden {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+            overflow: hidden;
+        }
+        &.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+      
+}
+@media screen and (min-width: 1280px) {
+    .body {
+        margin-bottom: 16px;
+        .filter_title{
+            @include HeadingDesktop;
+            color: $Black;
+        }
+        .filter{
+            display:flex;
+            flex-wrap:wrap; 
+            gap:8px;
+
+            .filter-button {
+                padding: 6px 8px;
+                border: 1px solid $forest-green;
+                background-color: $white;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+                color: $forest-green;
+                @include LabelDesktop;
+                &:hover {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+                &.active {
+                    background-color: $forest-green;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .content{
+        display:flex;
+        flex-flow:nowrap row-reverse;
+        .content-left{
+            width:auto;
+        }
+        .filter-section-wrapper {
+            transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+            &.hidden {
+                opacity: 0;
+                visibility: hidden;
+                height: 0;
+                overflow: hidden;
+            }
+            &.visible {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}

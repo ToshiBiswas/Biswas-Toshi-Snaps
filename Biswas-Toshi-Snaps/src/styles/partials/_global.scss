@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "Newsreader-Light";
+    src: 
+        url("../assets/Font/Newsreader-Light.woff") format(".woff"),
+        url("../assets/Font/Newsreader-Light.woff2") format(".woff2"); 
+    font-style: normal;
+    font-weight: light;
+}
+
+@font-face{
+    font-family: "Newsreader-LightItalic";
+    src: 
+        url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"),
+        url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");    
+    font-style: italic;
+    font-weight:light;
+}
+
+@font-face{
+    font-family: "Newsreader-Regular";
+    src: 
+        url("../assets/Font/Newsreader-Regular.woff") format(".woff"),
+        url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: "Outfit-Light";
+    src: url("../assets/Font/Outfit-Light.woff");
+    font-style: normal;
+    font-weight: light;
+}
+
+@font-face{
+    font-family: "Outfit-Medium";
+    src: url("../assets/Font/Outfit-Medium.woff");
+    font-style: normal;
+    font-weight: medium;
+}
+
+@mixin WordMarkDesktop{
+    font-size: 40px;    
+    font-family: "Newsreader-Regular";
+    line-height: 40px;
+    font-weight: 400;
+}
+
+@mixin WordMarkMobile{
+    font-size: 32px;    
+    font-family: "Newsreader-Regular";
+    line-height: 32px;
+    font-weight: 400;
+}
+@mixin TitleMobile{
+
+    font-size: 26px;    
+    font-family: "Newsreader-Light";
+    line-height: 38px;
+    font-weight: 300;
+    
+}
+
+@mixin TitleDesktop{
+    font-size: 52px;    
+    font-family: "Newsreader-Light";
+    line-height: 66px;
+    font-weight: 300;
+    
+}
+
+@mixin TitleItalicMobile{
+    font-size: 26px;    
+    font-family: "Newsreader-LightItalic";
+    line-height: 38px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+@mixin TitleItalicDesktop{
+    font-size: 52px;    
+    font-family: "Newsreader-LightItalic";
+    line-height: 66px;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+@mixin HeadingDesktop{
+    font-size: 24px;    
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin HeadingMobile{
+    font-size: 18px;    
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin BodyLightDesktop{
+    font-size: 20px;    
+    font-family: "Outfit-Light";
+    line-height: 26px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin BodyLightMobile{
+    font-size: 12px;    
+    font-family: "Outfit-Light";
+    line-height: 15px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@mixin BodyMediumDesktop{
+    font-size: 20px;    
+    font-family: "Outfit-Medium";
+    line-height: 26px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin BodyMediumMobile{
+    font-size: 12px;    
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin SmallBodyMediumDesktop{
+    font-size: 12px;    
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin BodyMediumMobile{
+    font-size: 10px;    
+    font-family: "Outfit-Medium";
+    line-height: 12px;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin LabelDesktop{
+    font-size: 14px;    
+    font-family: "Outfit-Medium";
+    line-height:  17.5px;
+    font-weight: 500;
+    font-style: normal;
+}
+@mixin LabelTablet{
+    font-size: 12px;    
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+}
+$Black: #0C1E1A;
+
+$forest-green: #1E6655;
+
+$pistachio: #EFFAF7;
+
+$sea-green: #B7CEC9;
+
+$sage: #E4EFEC;
+
+$white: #FFFFFF;

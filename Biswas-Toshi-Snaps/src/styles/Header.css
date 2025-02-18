@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Newsreader-Light";
+  src: url("../assets/Font/Newsreader-Light.woff") format(".woff"), url("../assets/Font/Newsreader-Light.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: light;
+}
+@font-face {
+  font-family: "Newsreader-LightItalic";
+  src: url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"), url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");
+  font-style: italic;
+  font-weight: light;
+}
+@font-face {
+  font-family: "Newsreader-Regular";
+  src: url("../assets/Font/Newsreader-Regular.woff") format(".woff"), url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Outfit-Light";
+  src: url("../assets/Font/Outfit-Light.woff");
+  font-style: normal;
+  font-weight: light;
+}
+@font-face {
+  font-family: "Outfit-Medium";
+  src: url("../assets/Font/Outfit-Medium.woff");
+  font-style: normal;
+  font-weight: medium;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    padding: 16px 0;
+    padding-bottom: 24px;
+  }
+  header .header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header_section .header_section_title {
+    font-size: 52px;
+    font-family: "Newsreader-Light";
+    line-height: 66px;
+    font-weight: 300;
+    color: #0C1E1A;
+    margin: 0px;
+  }
+  header .header_section .header_section_button {
+    padding: 11px 22px;
+    border: 2px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 999em;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  header .header_section .header_section_button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active:hover {
+    background-color: #FFFFFF;
+    color: #1E6655;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9999999px) {
+  header {
+    padding: 24px 0;
+  }
+  header .header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header_section .header_section_title {
+    font-size: 52px;
+    font-family: "Newsreader-Light";
+    line-height: 66px;
+    font-weight: 300;
+    color: #0C1E1A;
+    margin: 0px;
+  }
+  header .header_section .header_section_button {
+    padding: 11px 22px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 999em;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  header .header_section .header_section_button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active:hover {
+    background-color: #FFFFFF;
+    color: #1E6655;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header {
+    padding: 24px 0;
+  }
+  header .header_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header_section .header_section_title {
+    font-size: 52px;
+    font-family: "Newsreader-Light";
+    line-height: 66px;
+    font-weight: 300;
+    color: #0C1E1A;
+    margin: 0px;
+  }
+  header .header_section .header_section_button {
+    padding: 11px 22px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 999em;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  header .header_section .header_section_button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  header .header_section .header_section_button.active:hover {
+    background-color: #FFFFFF;
+    color: #1E6655;
+  }
+}/*# sourceMappingURL=Header.css.map */

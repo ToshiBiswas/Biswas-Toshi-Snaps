@@ -1,0 +1,175 @@
+@use './partials/_global.scss' as *;
+@media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
+    .main {
+        padding-top: 48px;
+        display:flex;
+        flex-direction: column;
+        gap:16px;
+        .main_section {
+            border: 1px solid $sea-green;
+            background-color: $sage;
+            border-radius: 8px;
+
+            .main_section_top{
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+                position: relative;
+                .main_section_top_img{ 
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    width: 100%;
+                    height: auto;
+                }
+                .main_section_top_author {
+                    position: absolute;
+                    bottom: 4px;
+                    right: -1px;
+                    @include LabelTablet;
+                    padding: 6px 8px;
+                    border: 1px solid $sea-green;
+                    background-color: $sage;
+                    border-top-left-radius: 8px;
+                }
+            }
+            .main_section_bottom{
+                border-bottom-right-radius:8px;
+                border-bottom-left-radius:8px;
+                display:flex;
+                gap: 8px;
+                padding-top:16px;
+                padding-bottom:16px;
+                padding-left: 8px;
+                background-color: $sage;
+
+                .main_section_bottom_button{
+                    padding: 6px 8px;
+                    border: 1px solid $sea-green;
+                    background-color: $white;
+                    border-radius: 8px;
+    
+                    @include LabelDesktop;
+                    &:hover{
+                        background-color: $sea-green;
+                    }
+                }
+            }
+            
+        }
+    }    
+}
+@media screen and (min-width: 768px) and (max-width: 1279.999999px){
+    .main {
+        padding-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        .main_section {
+            border: 1px solid $sea-green;
+            background-color: $sage;
+            border-radius: 12px;
+
+            .main_section_top{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                position: relative;
+                .main_section_top_img{ 
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                    width: 100%;
+                    height: auto;
+                    @include LabelDesktop;
+                }
+                .main_section_top_author{
+                    position: absolute;
+                    bottom: 4px;
+                    right: -1px;
+                    @include LabelDesktop;
+                    padding: 8px 12px;
+                    border: 1px solid $sea-green;
+                    background-color: $sage;
+                    border-top-left-radius: 12px;
+                }
+            }
+            .main_section_bottom{
+                display:flex;
+                gap: 8px;
+                padding-top:16px;
+                padding-bottom:16px;
+                padding-left: 8px;
+                background-color: $sage;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                .main_section_bottom_button{
+                    padding: 8px 12px;
+                    border: 1px solid $sea-green;
+                    background-color: $white;
+                    border-radius: 12px;
+                    @include LabelDesktop;
+                    &:hover{
+                        background-color: $sea-green;
+                    }
+                }
+            }
+            
+        }
+    }
+      
+}
+@media screen and (min-width: 1280px){
+    .main {
+        display: flex;
+        gap: 24px;
+        flex-flow: row wrap;
+        padding-top: 24px;
+        .main_section {
+            border: 1px solid $sea-green;
+            background-color: $sage;
+            border-radius: 12px;
+
+            .main_section_top{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+                position: relative;
+                .main_section_top_img{ 
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
+                    width: 392px;
+                    height: auto;
+                    @include LabelDesktop;
+                }
+                .main_section_top_author {
+                    position: absolute;
+                    bottom: 4px;
+                    right: -1px;
+                    @include LabelDesktop;
+                    padding: 8px 12px;
+                    border: 1px solid $sea-green;
+                    background-color: $sage;
+                    border-top-left-radius: 12px;
+                  }
+            }
+            .main_section_bottom{
+                display:flex;
+                gap: 8px;
+                padding-top:16px;
+                padding-bottom:16px;
+                padding-left: 8px;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                .main_section_bottom_button{
+
+                    padding: 8px 12px;
+                    border: 1px solid $sea-green;
+                    background-color: $white;
+                    border-radius: 12px;
+                    @include LabelDesktop;
+                    &:hover{
+                        background-color: $sea-green;
+                    }
+                }
+            }
+            
+        }
+    }
+
+}

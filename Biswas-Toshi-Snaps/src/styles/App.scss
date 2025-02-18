@@ -1,0 +1,101 @@
+@use './partials/_global.scss' as *;
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .filterable-app {
+        display: flex;
+        flex-direction: column;
+        padding:16px;
+        background-color: $pistachio;
+        .missions{
+            padding-bottom:24px;
+            .mission_header{
+                @include HeadingMobile;
+                color: $Black;
+            }
+            .mission_quote{
+                margin: 0;
+                @include TitleMobile;
+                color: $Black;
+                .mission_quote_italics{
+                    @include TitleItalicMobile;
+    
+                }
+    
+            }
+        }
+
+    }
+    
+}
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .filterable-app {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        background-color: $pistachio;
+        .missions{
+            .mission_header{
+                @include HeadingDesktop;
+                color: $Black;
+                margin:0px;
+                padding:24px 0;                        
+            }
+            .mission_quote{
+                @include TitleDesktop;
+                color: $Black;
+                margin:0px;
+                padding:24px 0;            
+
+                .mission_quote_italics{
+                    @include TitleItalicDesktop;
+                    color: $Black;
+                    margin:0px;
+                    font-style: italic;
+
+                }
+    
+            }
+        }
+    }
+    
+}
+@media screen and (min-width: 1280px){
+    .filterable-app {
+        padding: 24px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $pistachio;
+        padding-top: 24px;
+
+        .body {
+          display: flex;
+          justify-content: center;
+          .body-Section{
+              width: 1250px;;
+          }
+        }
+      }
+      .missions{
+        width: 725px;
+        .mission_header{
+            @include HeadingDesktop;
+            color: $Black;
+            margin:0px;
+            padding:24px 0;            
+        }
+        .mission_quote{
+            @include TitleDesktop;
+            color: $Black;
+            margin:0px;
+            .mission_quote-italics{
+                @include TitleItalicDesktop;
+                color: $Black;
+                font-style: italic;
+            }
+
+        }
+      }
+    
+}
