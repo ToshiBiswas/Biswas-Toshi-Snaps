@@ -1,7 +1,7 @@
 @use './partials/_global.scss' as *;
 @media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
     .main {
-        padding-top: 24px;
+        padding-top: 48px;
         display:flex;
         flex-direction: column;
         gap:16px;
@@ -15,9 +15,10 @@
                 border-top-right-radius: 8px;
                 position: relative;
                 .main_section_top_img{ 
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
                     width: 100%;
                     height: auto;
-                    opacity: 0.3;
                 }
                 .main_section_top_author {
                     position: absolute;
@@ -76,10 +77,9 @@
                     border-top-right-radius: 12px;
                     width: 100%;
                     height: auto;
-                    opacity: 0.3;
                     @include LabelDesktop;
                 }
-                .main_section_top_author {
+                .main_section_top_author{
                     position: absolute;
                     bottom: 4px;
                     right: -1px;
@@ -88,7 +88,7 @@
                     border: 1px solid $sea-green;
                     background-color: $sage;
                     border-top-left-radius: 12px;
-                  }
+                }
             }
             .main_section_bottom{
                 display:flex;
@@ -97,7 +97,8 @@
                 padding-bottom:16px;
                 padding-left: 8px;
                 background-color: $sage;
-
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
                 .main_section_bottom_button{
                     padding: 8px 12px;
                     border: 1px solid $sea-green;
@@ -119,18 +120,21 @@
         display: flex;
         gap: 24px;
         flex-flow: row wrap;
-
+        padding-top: 24px;
         .main_section {
             border: 1px solid $sea-green;
             background-color: $sage;
             border-radius: 12px;
 
             .main_section_top{
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
                 position: relative;
                 .main_section_top_img{ 
+                    border-top-left-radius: 12px;
+                    border-top-right-radius: 12px;
                     width: 392px;
                     height: auto;
-                    opacity: 0.3;
                     @include LabelDesktop;
                 }
                 .main_section_top_author {
@@ -150,7 +154,10 @@
                 padding-top:16px;
                 padding-bottom:16px;
                 padding-left: 8px;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
                 .main_section_bottom_button{
+
                     padding: 8px 12px;
                     border: 1px solid $sea-green;
                     background-color: $white;

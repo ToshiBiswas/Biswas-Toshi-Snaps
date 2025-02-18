@@ -1,48 +1,111 @@
 @use './partials/_global.scss' as *;
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .header{
-    background-color: #f0f0f0;
-    padding: 16px;
-    display: flex;
-    justify-content: flex-end;
+  header{
+    padding: 16px 0;
+    padding-bottom:24px;
     .header_section{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      .header_section_title{
+        @include TitleDesktop;
+        color: $Black;
+        margin:0px;
+      }
       .header_section_button{
-        padding: 8px 12px;
-        border: none;
-        background-color: #007bff;
-        color: #fff;
-        cursor: pointer;
-        border-radius: 4px;
+        padding: 11px 22px;
+        border: 2px solid $forest-green;
+        background-color: $white;
+        border-radius: 999em;
         transition: background-color 0.3s ease;
-    
+        color: $forest-green;
+        @include LabelTablet;
         &:hover {
-          background-color: #0056b3;
+          background-color: $forest-green;
+          color: $white;
         }
-        
+        &.active {
+          background-color: $forest-green;
+          color: $white;
+          &:hover {
+            background-color: $white;
+            color: $forest-green;
+          }
+        }
       }
     }
   }
   
 }
-.header{
-  background-color: #f0f0f0;
-  padding: 16px;
-  display: flex;
-  justify-content: flex-end;
-  .header_section{
-    .header_section_button{
-      padding: 8px 12px;
-      border: none;
-      background-color: #007bff;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-  
-      &:hover {
-        background-color: #0056b3;
+@media screen and (min-width: 768px) and (max-width: 1279.9999999px) {
+  header{
+    padding: 24px 0;
+    .header_section{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      .header_section_title{
+        @include TitleDesktop;
+        color: $Black;
+        margin:0px;
       }
-      
+      .header_section_button{
+        padding: 11px 22px;
+        border: 1px solid $forest-green;
+        background-color: $white;
+        border-radius: 999em;
+        transition: background-color 0.3s ease;
+        color: $forest-green;
+        @include LabelDesktop;
+        &:hover {
+            background-color: $forest-green;
+            color: $white;
+        }
+        &.active {
+          background-color: $forest-green;
+          color: $white;
+          &:hover {
+            background-color: $white;
+            color: $forest-green;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px){
+  header{
+    padding: 24px 0;
+    .header_section{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      .header_section_title{
+        @include TitleDesktop;
+        color: $Black;
+        margin:0px;
+      }
+      .header_section_button{
+        padding: 11px 22px;
+        border: 1px solid $forest-green;
+        background-color: $white;
+        border-radius: 999em;
+        transition: background-color 0.3s ease;
+        color: $forest-green;
+        @include LabelDesktop;
+        &:hover {
+            background-color: $forest-green;
+            color: $white;
+        }
+        &.active {
+          background-color: $forest-green;
+          color: $white;
+          &:hover {
+            background-color: $white;
+            color: $forest-green;
+          }
+        }
+      }
     }
   }
 }

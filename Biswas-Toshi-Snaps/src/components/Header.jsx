@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import FilterSection from './Filters.jsx';
-import '../styles/header.css'; 
+import '../styles/Header.css'; 
 
 
 const Header = ({ isFilterVisible, toggleFilterSection }) => {
@@ -8,8 +6,8 @@ const Header = ({ isFilterVisible, toggleFilterSection }) => {
     <header className="header">
         <div className="header_section">
             <h1 className="header_section_title">Snaps</h1>
-            <button onClick={toggleFilterSection} className="header_section_button">
-                {isFilterVisible ? 'Hide Filters' : 'Show Filters'}
+            <button onClick={toggleFilterSection} className={`header_section_button ${isFilterVisible ? 'active' : ''}`}>
+              Filters
             </button>
         </div>
 

@@ -1,8 +1,8 @@
 @font-face {
     font-family: "Newsreader-Light";
     src: 
-        url("../../assets/Font/Newsreader-Light.woff") format(".woff"),
-        url("../../assets/Font/Newsreader-Light.woff2") format(".woff2"); 
+        url("../assets/Font/Newsreader-Light.woff") format(".woff"),
+        url("../assets/Font/Newsreader-Light.woff2") format(".woff2"); 
     font-style: normal;
     font-weight: light;
 }
@@ -10,8 +10,8 @@
 @font-face{
     font-family: "Newsreader-LightItalic";
     src: 
-        url("../../assets/Font/Newsreader-LightItalic.woff") format(".woff"),
-        url("../../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");    
+        url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"),
+        url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");    
     font-style: italic;
     font-weight:light;
 }
@@ -19,22 +19,22 @@
 @font-face{
     font-family: "Newsreader-Regular";
     src: 
-        url("../../assets/Font/Newsreader-Regular.woff") format(".woff"),
-        url("../../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+        url("../assets/Font/Newsreader-Regular.woff") format(".woff"),
+        url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face{
     font-family: "Outfit-Light";
-    src: url("../../assets/Font/Outfit-Light.woff");
+    src: url("../assets/Font/Outfit-Light.woff");
     font-style: normal;
     font-weight: light;
 }
 
 @font-face{
     font-family: "Outfit-Medium";
-    src: url("../../assets/Font/Outfit-Medium.woff");
+    src: url("../assets/Font/Outfit-Medium.woff");
     font-style: normal;
     font-weight: medium;
 }

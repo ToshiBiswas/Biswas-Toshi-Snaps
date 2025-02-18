@@ -1,29 +1,195 @@
-.body {
-  margin-bottom: 16px;
+@font-face {
+  font-family: "Newsreader-Light";
+  src: url("../assets/Font/Newsreader-Light.woff") format(".woff"), url("../assets/Font/Newsreader-Light.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: light;
 }
-.body .filter-button {
-  background-color: gray;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+@font-face {
+  font-family: "Newsreader-LightItalic";
+  src: url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"), url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");
+  font-style: italic;
+  font-weight: light;
 }
-.body .filter-button.active {
-  background-color: blue;
+@font-face {
+  font-family: "Newsreader-Regular";
+  src: url("../assets/Font/Newsreader-Regular.woff") format(".woff"), url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: normal;
 }
-
-.filter-section-wrapper {
-  transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+@font-face {
+  font-family: "Outfit-Light";
+  src: url("../assets/Font/Outfit-Light.woff");
+  font-style: normal;
+  font-weight: light;
 }
-.filter-section-wrapper.hidden {
-  opacity: 0;
-  visibility: hidden;
-  height: 0;
-  overflow: hidden;
+@font-face {
+  font-family: "Outfit-Medium";
+  src: url("../assets/Font/Outfit-Medium.woff");
+  font-style: normal;
+  font-weight: medium;
 }
-.filter-section-wrapper.visible {
-  opacity: 1;
-  visibility: visible;
+@media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
+  .body {
+    margin-bottom: 16px;
+  }
+  .body .filter_title {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: #0C1E1A;
+  }
+  .body .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .body .filter .filter-button {
+    padding: 6px 8px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .body .filter .filter-button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .body .filter .filter-button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .filter-section-wrapper {
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+  }
+  .filter-section-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  .filter-section-wrapper.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .body {
+    margin-bottom: 16px;
+  }
+  .body .filter_title {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: #0C1E1A;
+  }
+  .body .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .body .filter .filter-button {
+    padding: 6px 8px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .body .filter .filter-button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .body .filter .filter-button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .filter-section-wrapper {
+    padding-top: 16px;
+    padding-bottom: 48px;
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+  }
+  .filter-section-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  .filter-section-wrapper.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .body {
+    margin-bottom: 16px;
+  }
+  .body .filter_title {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    color: #0C1E1A;
+  }
+  .body .filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .body .filter .filter-button {
+    padding: 6px 8px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    color: #1E6655;
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .body .filter .filter-button:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .body .filter .filter-button.active {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .content {
+    display: flex;
+    flex-flow: nowrap row-reverse;
+  }
+  .content .content-left {
+    width: auto;
+  }
+  .content .filter-section-wrapper {
+    transition: opacity 0.3s ease, visibility 0.3s ease, height 0.3s ease;
+  }
+  .content .filter-section-wrapper.hidden {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+  }
+  .content .filter-section-wrapper.visible {
+    opacity: 1;
+    visibility: visible;
+  }
 }/*# sourceMappingURL=FilterSection.css.map */

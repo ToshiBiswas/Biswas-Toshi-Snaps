@@ -1,36 +1,36 @@
 @font-face {
   font-family: "Newsreader-Light";
-  src: url("../../assets/Font/Newsreader-Light.woff") format(".woff"), url("../../assets/Font/Newsreader-Light.woff2") format(".woff2");
+  src: url("../assets/Font/Newsreader-Light.woff") format(".woff"), url("../assets/Font/Newsreader-Light.woff2") format(".woff2");
   font-style: normal;
   font-weight: light;
 }
 @font-face {
   font-family: "Newsreader-LightItalic";
-  src: url("../../assets/Font/Newsreader-LightItalic.woff") format(".woff"), url("../../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");
+  src: url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"), url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");
   font-style: italic;
   font-weight: light;
 }
 @font-face {
   font-family: "Newsreader-Regular";
-  src: url("../../assets/Font/Newsreader-Regular.woff") format(".woff"), url("../../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+  src: url("../assets/Font/Newsreader-Regular.woff") format(".woff"), url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Outfit-Light";
-  src: url("../../assets/Font/Outfit-Light.woff");
+  src: url("../assets/Font/Outfit-Light.woff");
   font-style: normal;
   font-weight: light;
 }
 @font-face {
   font-family: "Outfit-Medium";
-  src: url("../../assets/Font/Outfit-Medium.woff");
+  src: url("../assets/Font/Outfit-Medium.woff");
   font-style: normal;
   font-weight: medium;
 }
 @media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
   .main {
-    padding-top: 24px;
+    padding-top: 48px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -50,7 +50,6 @@
     border-top-right-radius: 8px;
     width: 100%;
     height: auto;
-    opacity: 0.3;
   }
   .main .main_section .main_section_top .main_section_top_author {
     position: absolute;
@@ -113,7 +112,6 @@
     border-top-right-radius: 12px;
     width: 100%;
     height: auto;
-    opacity: 0.3;
     font-size: 14px;
     font-family: "Outfit-Medium";
     line-height: 17.5px;
@@ -181,7 +179,6 @@
     border-top-right-radius: 12px;
     width: 392px;
     height: auto;
-    opacity: 0.3;
     font-size: 14px;
     font-family: "Outfit-Medium";
     line-height: 17.5px;
