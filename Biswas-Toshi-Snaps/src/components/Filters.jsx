@@ -15,8 +15,8 @@ const Filters = ({ activeFilter, onFilterChange }) => {
   };
 
   return (
-    <div>
-        <h1 className filter_title>
+    <div className="filters">
+        <h1 className= "filter_title">
             Filters: 
         </h1>
         <div className="filter">
@@ -24,7 +24,7 @@ const Filters = ({ activeFilter, onFilterChange }) => {
             <button
             key={filter}
             onClick={() => handleFilterClick(filter)}
-            className={`filter-button ${activeFilter === filter ? 'active' : ''}`}
+          className={`filter-button ${activeFilter === filter ? 'active' : ''}`}
             >
             {filter}
             </button>
