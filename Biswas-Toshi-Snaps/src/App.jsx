@@ -10,8 +10,6 @@ const App = () => {
   const [activeFilter, setActiveFilter] = useState(null);
   // State to control the visibility of the filter section
   const [isFilterVisible, setIsFilterVisible] = useState(false);
-
-  // Example list of items; each item has multiple tags corresponding to filters.
 ``
   // Filter the items based on the active filter.
   // If activeFilter is set, only include items whose tags include that filter.
