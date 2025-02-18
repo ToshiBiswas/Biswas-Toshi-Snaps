@@ -1,0 +1,152 @@
+@use './partials/_global.scss' as *;
+a{
+    text-decoration: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .content-container{
+        padding-top:60px;
+        .contents{
+
+            .content_left{
+                width:100%;
+                h1{
+                    @include TitleDesktop;
+                    color:$Black;
+                }
+                
+            }
+            .content_right{
+                .content_right_left{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                }
+                .content_right_center{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                    padding-top:36px;
+                }
+                .socials{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                    width:100%;
+                    display:flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .socials{
+            padding-top:36px;
+
+            gap:24px;
+            padding-top:20px;
+            @include BodyMediumDesktop;
+            color:$Black;
+            display:flex;
+
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .content-container{
+        padding-top:120px;
+
+        .contents{
+            padding-bottom:240px;
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            .content_left{
+                width:100%;
+                h1{
+                    @include TitleDesktop;
+                    color:$Black;
+                }
+            }
+            .content_right{
+                width:100%;
+                display:flex;
+                justify-content: space-between;
+                padding-right: 24px;
+                .content_right_left{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                }
+                .content_right_center{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                }
+                .socials{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                    width:100%;
+                    display:flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .socials{
+            gap:24px;
+            padding-top:20px;
+            @include BodyMediumDesktop;
+            color:$Black;
+            display:flex;
+
+        }
+    }
+}
+@media screen and (min-width: 1280px){
+    .content-container{
+        padding-top:120px;
+        padding-bottom:240px;
+
+        display:flex;
+        .contents{
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+            .content_left{
+                width:100%;
+                h1{
+                    @include TitleDesktop;
+                    color:$Black;
+                }
+            }
+            .content_right{
+                width:100%;
+                display:flex;
+                justify-content: space-between;
+                .content_right_left{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                }
+                .content_right_center{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                }
+                .socials{
+                    @include BodyMediumDesktop;
+                    color:$Black;
+                    width:100%;
+                    display:flex;
+                    justify-content: space-between;
+                    img{
+    
+                    }
+                }
+            }
+        }
+        .socials{
+            gap:16px;
+            padding-left:120px;
+            padding-top:20px;
+            @include BodyMediumDesktop;
+            color:$Black;
+            display:flex;
+            justify-content: space-between;
+            img{
+            }
+        }
+    }
+
+}

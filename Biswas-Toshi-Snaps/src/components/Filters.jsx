@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/FilterSection.css';
 import filters from "../assets/Data/tags.json"
-// Example filters (this data could also come from a JSON file)
 
 const Filters = ({ activeFilter, onFilterChange }) => {
   const handleFilterClick = (filterId) => {
