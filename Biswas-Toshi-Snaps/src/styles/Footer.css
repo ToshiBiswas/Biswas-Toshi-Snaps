@@ -39,7 +39,7 @@ a {
   .content-container .contents .content_left {
     width: 100%;
   }
-  .content-container .contents .content_left h1 {
+  .content-container .contents .content_left a {
     font-size: 52px;
     font-family: "Newsreader-Light";
     line-height: 66px;
@@ -100,7 +100,7 @@ a {
   .content-container .contents .content_left {
     width: 100%;
   }
-  .content-container .contents .content_left h1 {
+  .content-container .contents .content_left a {
     font-size: 52px;
     font-family: "Newsreader-Light";
     line-height: 66px;
@@ -166,7 +166,7 @@ a {
   .content-container .contents .content_left {
     width: 100%;
   }
-  .content-container .contents .content_left h1 {
+  .content-container .contents .content_left a {
     font-size: 52px;
     font-family: "Newsreader-Light";
     line-height: 66px;
