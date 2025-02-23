@@ -2,7 +2,7 @@
 import React from 'react';
 import '../styles/content.css';
 
-const Content = ({ items }) => {
+const Content = ({ items }, {data}) => {
   return (
     <div className="main">
         {items.map((item) => (
