@@ -98,7 +98,7 @@ a{
     .content-container{
         padding-top:120px;
         padding-bottom:240px;
-
+        
         display:flex;
         .contents{
             width:100%;
@@ -110,6 +110,7 @@ a{
                     @include TitleDesktop;
                     color:$Black;
                 }
+                
             }
             .content_right{
                 width:100%;

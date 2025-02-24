@@ -1,9 +1,9 @@
 
 import "../styles/Footer.css"
-import Facebook from "../assets/Icons/Facebook.svg"
-import X from "../assets/Icons/X_twitter.svg"
-import Instagram from"../assets/Icons/Instagram.svg"
-import Pinterest from "../assets/Icons/Pinterest.svg"
+import Facebook from "../../public/Icons/Facebook.svg"
+import X from "../../public/Icons/X_twitter.svg"
+import Instagram from"../../public/Icons/Instagram.svg"
+import Pinterest from "../../public/Icons/Pinterest.svg"
 import { Link } from "react-router-dom"
 const Footer = () => {
     return(
