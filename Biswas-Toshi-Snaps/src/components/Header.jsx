@@ -10,7 +10,6 @@ const Header = ({ isFilterVisible, toggleFilterSection }) => {
               Filters
             </button>
         </div>
-
     </header>
   );
 };

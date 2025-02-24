@@ -1,0 +1,110 @@
+@use './partials/_global.scss' as *;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header{
+        border: none;
+        color:$pistachio;
+        padding: 16px 0;
+        padding-bottom:24px;
+        margin: 45px 0px;
+    
+        .header_section{
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+          .header_section_title{
+            @include TitleMobile;
+            color: $Black;
+            margin:0px;
+          }
+          .header_section_right{
+            display:flex;
+            gap:4px;
+            align-content: center;
+            .header_section_right_arrow{
+                height:36px;
+                width:auto;
+                align-self: center;
+            }
+            .header_section_right_next{
+              margin: 0px;
+              @include TitleMobile;
+              color: $forest-green;
+    
+            }
+          }
+        }
+    }
+  
+}
+@media screen and (min-width: 768px) and (max-width: 1279.9999999px) {
+  header{
+    border: none;
+    color:$pistachio;
+    padding: 16px 0;
+    padding-bottom:24px;
+    margin: 45px 0px;
+
+    .header_section{
+      display:flex;
+      justify-content: space-between;
+      align-items: center;
+      .header_section_title{
+        @include TitleDesktop;
+        color: $Black;
+        margin:0px;
+      }
+      .header_section_right{
+        display:flex;
+        gap:4px;
+        align-content: center;
+        .header_section_right_arrow{
+            height:36px;
+            width:auto;
+            align-self: center;
+        }
+        .header_section_right_next{
+          margin: 0px;
+          @include TitleDesktop;
+          color: $forest-green;
+
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1280px){
+    header{
+        border: none;
+        color:$pistachio;
+        padding: 16px 0;
+        padding-bottom:24px;
+        margin: 45px 0px;
+    
+        .header_section{
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+          .header_section_title{
+            @include TitleDesktop;
+            color: $Black;
+            margin:0px;
+          }
+          .header_section_right{
+            display:flex;
+            gap:4px;
+            align-content: center;
+            .header_section_right_arrow{
+                height:36px;
+                width:auto;
+                align-self: center;
+            }
+            .header_section_right_next{
+              margin: 0px;
+              @include TitleDesktop;
+              color: $forest-green;
+    
+            }
+          }
+        }
+    }
+}
