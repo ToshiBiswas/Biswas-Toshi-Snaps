@@ -22,6 +22,10 @@
   font-style: normal;
   font-weight: light;
 }
+a {
+  color: inherit;
+}
+
 @font-face {
   font-family: "Outfit-Medium";
   src: url("../assets/Font/Outfit-Medium.woff");

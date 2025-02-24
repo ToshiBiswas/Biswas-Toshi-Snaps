@@ -1,0 +1,733 @@
+@font-face {
+  font-family: "Newsreader-Light";
+  src: url("../assets/Font/Newsreader-Light.woff") format(".woff"), url("../assets/Font/Newsreader-Light.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: light;
+}
+@font-face {
+  font-family: "Newsreader-LightItalic";
+  src: url("../assets/Font/Newsreader-LightItalic.woff") format(".woff"), url("../assets/Font/Newsreader-LightItalic.woff2") format(".woff2");
+  font-style: italic;
+  font-weight: light;
+}
+@font-face {
+  font-family: "Newsreader-Regular";
+  src: url("../assets/Font/Newsreader-Regular.woff") format(".woff"), url("../assets/Font/Newsreader-Regular.woff2") format(".woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Outfit-Light";
+  src: url("../assets/Font/Outfit-Light.woff");
+  font-style: normal;
+  font-weight: light;
+}
+a {
+  color: inherit;
+}
+
+@font-face {
+  font-family: "Outfit-Medium";
+  src: url("../assets/Font/Outfit-Medium.woff");
+  font-style: normal;
+  font-weight: medium;
+}
+@media screen and (min-width: 320px) and (max-width: 767.9999999999px) {
+  .photo {
+    padding-top: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .photo .photo_section {
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-radius: 8px;
+  }
+  .photo .photo_section .photo_section_top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_author {
+    position: absolute;
+    bottom: 4px;
+    right: -1px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 6px 8px;
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-top-left-radius: 8px;
+  }
+  .photo .photo_section .photo_section_bottom {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    gap: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 8px;
+    background-color: #E4EFEC;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button {
+    padding: 6px 8px;
+    border: 1px solid #B7CEC9;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button:hover {
+    background-color: #B7CEC9;
+  }
+  .photo .photo_section .info {
+    padding: 16px;
+  }
+  .photo .photo_section .info .info_top {
+    display: grid;
+    grid-template-areas: "likes date" "author author";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  .photo .photo_section .info .info_top .info_top_likes {
+    grid-area: likes;
+  }
+  .photo .photo_section .info .info_top .info_top_likes .info_top_likes_ammount {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .info .info_top .info_top_author {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+    grid-area: author;
+    text-align: left;
+  }
+  .photo .photo_section .info .info_date {
+    grid-area: date;
+    text-align: right;
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment {
+    margin: 0px;
+  }
+  .photo .comment .comment_section {
+    margin: 0px;
+    padding: 0;
+  }
+  .photo .comment .comment_section .comment_section_page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 30px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 120px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 11px 22px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .photo .comment .comment_section .comment_section_comments {
+    padding-top: 16px;
+    padding-bottom: 72px;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_count {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data {
+    border-top: 2px solid #B7CEC9;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 0;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_name {
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_time {
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_bottom {
+    font-size: 18px;
+    font-family: "Outfit-Medium";
+    line-height: 23px;
+    font-weight: 500;
+    font-style: normal;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.99999px) {
+  .photo {
+    background-color: #EFFAF7;
+    padding-top: 48px;
+    padding-left: 36px;
+    padding-right: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .photo .photo_section {
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-radius: 8px;
+  }
+  .photo .photo_section .photo_section_top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_author {
+    position: absolute;
+    bottom: 4px;
+    right: -1px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 6px 8px;
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-top-left-radius: 8px;
+  }
+  .photo .photo_section .photo_section_bottom {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    background-color: #E4EFEC;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button {
+    padding: 8px 12px;
+    border: 1px solid #B7CEC9;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button:hover {
+    background-color: #B7CEC9;
+  }
+  .photo .photo_section .info {
+    padding: 16px;
+  }
+  .photo .photo_section .info .info_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .photo .photo_section .info .info_top .info_top_likes {
+    display: flex;
+  }
+  .photo .photo_section .info .info_top .info_top_likes .info_top_likes_ammount {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .info .info_top .info_top_author {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .info .info_top .info_date {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment {
+    margin: 0px;
+  }
+  .photo .comment .comment_section {
+    margin: 0px;
+    padding: 0;
+  }
+  .photo .comment .comment_section .comment_section_page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 30px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 120px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 11px 22px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .photo .comment .comment_section .comment_section_comments {
+    padding-top: 16px;
+    padding-bottom: 72px;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_count {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data {
+    border-top: 2px solid #B7CEC9;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 0;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_name {
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_time {
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_bottom {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    white-space: normal; /* Allow text wrapping at whitespace */
+    word-break: normal; /* Don't break words arbitrarily */
+    overflow-wrap: normal; /* Prevent breaking words in the middle */
+    -webkit-hyphens: none;
+            hyphens: none; /* Disable automatic hyphenation */
+  }
+}
+@media screen and (min-width: 1280px) {
+  .photo {
+    background-color: #EFFAF7;
+    padding-top: 48px;
+    padding-left: 36px;
+    padding-right: 36px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .photo section {
+    width: 1050px;
+  }
+  .photo .photo_section {
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-radius: 8px;
+  }
+  .photo .photo_section .photo_section_top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    position: relative;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: auto;
+  }
+  .photo .photo_section .photo_section_top .photo_section_top_author {
+    position: absolute;
+    bottom: 4px;
+    right: -1px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 6px 8px;
+    border: 1px solid #B7CEC9;
+    background-color: #E4EFEC;
+    border-top-left-radius: 8px;
+  }
+  .photo .photo_section .photo_section_bottom {
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    gap: 12px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 12px;
+    background-color: #E4EFEC;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button {
+    padding: 8px 12px;
+    border: 1px solid #B7CEC9;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: "Outfit-Medium";
+    line-height: 15px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .photo_section_bottom .photo_section_bottom_button:hover {
+    background-color: #B7CEC9;
+  }
+  .photo .photo_section .info {
+    padding: 16px;
+  }
+  .photo .photo_section .info .info_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .photo .photo_section .info .info_top .info_top_likes {
+    display: flex;
+  }
+  .photo .photo_section .info .info_top .info_top_likes .info_top_likes_ammount {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .info .info_top .info_top_author {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .photo_section .info .info_top .info_date {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment {
+    margin: 0px;
+  }
+  .photo .comment .comment_section {
+    margin: 0px;
+    padding: 0;
+  }
+  .photo .comment .comment_section .comment_section_page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_name {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 30px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_nameBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_comment {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 36px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock {
+    border: 2px solid #B7CEC9;
+    border-radius: 12px;
+    display: inline-block;
+    width: calc(100% - 40px);
+    height: 120px;
+    background-color: #ffffff;
+    border-style: solid;
+    outline: 0;
+    padding: 16px;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock:focus-visible {
+    border: 2px solid #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_commentBlock.error {
+    border: 2px solid #B10606;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button {
+    padding-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    padding: 11px 22px;
+    border: 1px solid #1E6655;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_page .comment_section_page_add .comment_section_page_add_button .comment_section_page_add_button_content:hover {
+    background-color: #1E6655;
+    color: #FFFFFF;
+  }
+  .photo .comment .comment_section .comment_section_comments {
+    padding-top: 16px;
+    padding-bottom: 72px;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_count {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data {
+    border-top: 2px solid #B7CEC9;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0 0;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_name {
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_top .comment_section_comments_data_top_time {
+    font-size: 14px;
+    font-family: "Outfit-Medium";
+    line-height: 17.5px;
+    font-weight: 500;
+    font-style: normal;
+    color: #1E6655;
+  }
+  .photo .comment .comment_section .comment_section_comments .comment_section_comments_data .comment_section_comments_data_bottom {
+    font-size: 24px;
+    font-family: "Outfit-Medium";
+    line-height: 30px;
+    font-weight: 500;
+    font-style: normal;
+    white-space: normal; /* Allow text wrapping at whitespace */
+    word-break: normal; /* Don't break words arbitrarily */
+    overflow-wrap: normal; /* Prevent breaking words in the middle */
+    -webkit-hyphens: none;
+            hyphens: none; /* Disable automatic hyphenation */
+  }
+}/*# sourceMappingURL=Photo.css.map */
