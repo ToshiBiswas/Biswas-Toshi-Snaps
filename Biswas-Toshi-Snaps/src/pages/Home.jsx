@@ -7,7 +7,7 @@ import Footer from '../components/Footer.jsx';
 import axios from 'axios';
 
 const Home = () => {
-  const API_BASE_URL = 'https://unit-3-project-c5faaab51857.herokuapp.com';
+  const API_BASE_URL = 'http://localhost:5050';
   const [apiKey, setApiKey] = useState(null);
   const [items, setData] = useState([]); // Initialize as an empty array
   const [loading, setLoading] = useState(true);
@@ -19,14 +19,14 @@ const Home = () => {
         // Step 1: Get the API key from /register
         let id = sessionStorage.getItem("sessionId");
         if (typeof id !== "string") {
-          const response = await axios.get(`${API_BASE_URL}/register`);
+          const response = await axios.get(`${API_BASE_URL}`);
           id = response.data.api_key;
           sessionStorage.setItem("sessionId", id);
         }
         setApiKey(id);
         
         // Step 2: Use the API key to fetch data
-        const dataResponse = await axios.get(`${API_BASE_URL}/photos/?api_key=${id}`);
+        const dataResponse = await axios.get(`${API_BASE_URL}/photos`);
         setData(dataResponse.data);
       } catch (err) {
         console.error(err);
