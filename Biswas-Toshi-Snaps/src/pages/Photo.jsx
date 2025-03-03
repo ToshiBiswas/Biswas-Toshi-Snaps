@@ -20,15 +20,9 @@ const Photo = () => {
   useEffect(() => {
     async function getPhoto() {
       try {
-        let apiKey = sessionStorage.getItem("sessionId");
-        if (!apiKey) {
-          const regResponse = await axios.get("https://unit-3-project-c5faaab51857.herokuapp.com/register");
-          apiKey = regResponse.data.api_key;
-          sessionStorage.setItem("sessionId", apiKey);
-        }
         const photoId = sessionStorage.getItem("photoId");
         const response = await axios.get(
-          `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${photoId}/?api_key=${apiKey}`
+          `http://localhost:5050/photos/${photoId}`
         );
         console.log("Photo response:", response);
         setPhoto(response.data);
@@ -43,7 +37,7 @@ const Photo = () => {
         const apiKey = sessionStorage.getItem("sessionId");
         const photoId = sessionStorage.getItem("photoId");
         const response = await axios.get(
-          `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${photoId}/comments/?api_key=${apiKey}`
+          `http://localhost:5050/photos/${photoId}/comments`
         );
         console.log("Comments response:", response);
         const sortedComments = response.data.sort(
@@ -81,7 +75,7 @@ const Photo = () => {
       const apiKey = sessionStorage.getItem("sessionId");
       const photoId = sessionStorage.getItem("photoId");
       const response = await axios.post(
-        `https://unit-3-project-c5faaab51857.herokuapp.com/photos/${photoId}/comments/?api_key=${apiKey}`,
+        `http://localhost:5050/photos/${photoId}/comments`,
         {
           name: newCommentName,
           comment: newCommentText
@@ -115,7 +109,7 @@ const Photo = () => {
                         className="photo_section_top_img"
                     />
                 </div>
-                <div className="photo_section_bottom">
+                <div className  ="photo_section_bottom">
                 {photo.tags && photo.tags.map((tag) => (
                     <button key={tag} className="photo_section_bottom_button">
                     {tag}
